@@ -1,0 +1,30 @@
+.about-us-container {
+  max-width: 560px;
+  text-align: left;
+}
+
+.about-us-heading {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b4332;
+}
+
+.about-us-description {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: #2d6a4f;
+}
+
+.about-us-content {
+  margin: 0 0 0.9rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #243028;
+}
+
+.about-us-content:last-child {
+  margin-bottom: 0;
+}

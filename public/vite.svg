@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Paradise Nursery">
+  <rect width="64" height="64" rx="14" fill="#1b4332"/>
+  <path d="M32 50c0-16 10-28 22-32-2 18-12 30-22 32z" fill="#95d5b2"/>
+  <path d="M32 50C32 34 22 22 10 18c2 18 12 30 22 32z" fill="#52b788"/>
+  <path d="M32 50V20" stroke="#d8f3dc" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,127 @@
+.app-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-page {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.72);
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(12, 32, 24, 0.72), rgba(12, 32, 24, 0.28));
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  min-height: 100%;
+  padding: 3rem 6vw;
+}
+
+.landing_content {
+  flex: 1 1 340px;
+  max-width: 460px;
+  color: #f7f6f2;
+}
+
+.eyebrow {
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #b7e4c7;
+}
+
+.landing_content h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 0.95;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0.2rem 0 0;
+  font-size: 1.35rem;
+}
+
+.divider {
+  width: 72px;
+  height: 3px;
+  margin: 1.1rem 0;
+  background: #95d5b2;
+}
+
+.get-started-button {
+  margin-top: 1.6rem;
+  padding: 0.9rem 1.6rem;
+  border: none;
+  border-radius: 999px;
+  background: #40916c;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.get-started-button:hover {
+  background: #2d6a4f;
+  transform: translateY(-1px);
+}
+
+.aboutus_container {
+  flex: 1 1 420px;
+  max-width: 620px;
+  padding: 1.6rem 1.7rem;
+  border-radius: 18px;
+  background: rgba(247, 246, 242, 0.94);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.product-list-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #f4f7f2;
+  transition: top 0.45s ease;
+}
+
+.product-list-container.visible {
+  top: 0;
+}
+
+@media (max-width: 860px) {
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2.2rem 1.2rem 3rem;
+  }
+
+  .landing_content,
+  .aboutus_container {
+    max-width: none;
+  }
+}
